@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+            background: url("uploads/fondo-body.png");
+            background-size: contain;
+            background-attachment: fixed; 
+            height: 100vh;
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .floating-lights {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .light {
+            position: absolute;
+            width: 30px;
+            height: 80px;
+            background: radial-gradient(circle, rgba(255, 223, 150, 1) 10%, rgba(255, 223, 150, 0) 70%);
+            border-radius: 50%;
+            animation: floatLights 6s infinite ease-in-out alternate;
+        }
+
+        @keyframes floatLights {
+            from {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-100px) translateX(20px);
+                opacity: 0.5;
+            }
+        }
+        .container {
+            max-width: 450px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        /* --- SECCIÓN DEL SOBRE --- */
+         .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+        .envelope {
+            width: 100%;
+            height: 100%;
+            background: url('uploads/icono-sobre.png') no-repeat center;
+            background-size: cover;
+            transition: transform 0.8s ease-in-out;
+            cursor:pointer;
+            border-radius: 10px;
+        }
+
+        /* --- EFECTO DE ANIMACIÓN PARA EL TEXTO DEL SOBRE --- */
+        .fade-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        .hidden {
+            display: none;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            color: #6C3483;
+            font-size: 40px;
+        }
+
+        h3 {
+            font-weight: bold;
+            color: #6C3483;
+            font-size: 90px;
+        }
+        
+        .mtop{
+            margin-top: -20px;
+        }
+
+        p {
+            font-family: "Poppins", serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+        .frases {
+            font-family: 'Great Vibes', serif;
+            font-size: 30px;
+            font-weight: 400;
+            font-style: normal;
+            color: #5B2C6F;
+        }
+        .flugar {
+            font-family: 'Poppins', serif;
+            font-size: 20px;
+            font-weight: 400;
+            font-style: normal;
+            color: #5B2C6F;
+        }
+        .misxv {
+            font-family: 'Great Vibes', serif;
+            font-size: 50px;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .quinceanera {
+            font-family: 'Great Vibes', serif;
+            text-shadow: 3px 3px 3px #9e32be;
+            font-size: 80px;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .date {
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            color: #5B2C6F;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .whatsapp-btn {
+            background-color: #8E44AD;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            width: 90%;
+            margin-top: 10px;
+        }
+
+        .whatsapp-btn img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .music-controls {
+            margin-top: 20px;
+        }
+
+        .music-button {
+            background-color: #8E44AD;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .music-button:hover {
+            background-color: #5B2C6F;
+        }
+
+        .countdown {
+            font-size: 22px;
+            color: #6C3483;
+            font-weight: bold;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .west-button-link {
+            font-weight: bold;
+            color: #6C3483;
+            text-decoration: none;
+        }
+        
+        /* --- SECCIÓN FLOTANTE PARA CONTROL DE MÚSICA --- */
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(108, 52, 131, 0.9);
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .music-control:hover {
+            background-color: rgba(155, 89, 182, 1);
+        }
+
+        .music-control img {
+            width: 24px;
+            height: 24px;
+        }
+
+    /* Estilos para el separador con el diamante */
+    hr {
+        border-color: red;
+    }
+
+    .separator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+      }
+  
+      .line {
+        width: 30%;
+        height:2px;
+        background-color: rgba(155, 89, 182, 1);
+      }
+  
+    .diamond-icon {
+        display: inline-block;
+        line-height: 1;
+        transition: all .3s;
+        color: #69727d;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .diamond-icon svg {
+        fill: #5A4A42;
+    }
+
+    .diamond-icon i, .diamond-icon svg {
+        width: 1em;
+        height: 1em;
+        position: relative;
+        display: block;
+    }
+
+    img, svg {
+        vertical-align: middle;
+    }

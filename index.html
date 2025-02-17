@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años</title>
+    
+    <link rel="stylesheet" href="tema.css"  />
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div class="floating-lights">
+        <div class="light" style="top: 10%; left: 20%; animation-duration: 6s;"></div>
+        <div class="light" style="top: 5%; left: 90%; animation-duration: 6s;"></div>
+        <div class="light" style="top: 30%; left: 65%; animation-duration: 5s;"></div>
+        <div class="light" style="top: 45%; left: 30%; animation-duration: 5s;"></div>
+        <div class="light" style="top: 60%; left: 40%; animation-duration: 7s;"></div>
+        <div class="light" style="top: 70%; left: 80%; animation-duration: 6s;"></div>
+        <div class="light" style="top: 90%; left: 10%; animation-duration: 8s;"></div>
+    </div>
+
+    <div class="container">
+
+        <!-- SECCIÓN DEL SOBRE -->
+        <div class="intro" id="intro">
+            <div class="envelope" id="envelope"></div>
+        </div> 
+                
+        <!-- Sección 1: Bienvenida -->
+        <div id="invitacion" class="section">
+            <h2 class="misxv">Mis XV</h2>
+            <h1 class="quinceanera mtop">Lesly</h1>
+
+            <div class="separator">
+                <div class="line"></div>
+                <div class="diamond-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-gem" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M485.5 0L576 160H474.9L405.7 0h79.8zm-128 0l69.2 160H149.3L218.5 0h139zm-267 0h79.8l-69.2 160H0L90.5 0zM0 192h100.7l123 251.7c1.5 3.1-2.7 5.9-5 3.3L0 192zm148.2 0h279.6l-137 318.2c-1 2.4-4.5 2.4-5.5 0L148.2 192zm204.1 251.7l123-251.7H576L357.3 446.9c-2.3 2.7-6.5-.1-5-3.2z"></path></svg>
+                </div>
+                <div class="line"></div>
+            </div>
+           
+            <img src="uploads/princes.png" alt="lesXV">
+            <p class="frases">
+                "Hay momentos inolvidables que se guardan en el corazón. Con la bendición de Dios y el amor de mi familia, 
+                inicio un nuevo camino lleno de ilusiones. Me encantaría que seas parte de este día tan especial."
+            </p>
+            <p class="date">26 de Abril 2025</p>
+        </div>
+        
+        <!-- Sección : Contador -->
+        <div class="section">
+            <h2>Faltan</h2>
+            <p class="flugar">
+                <span id="days"></span> días / <span id="hours"></span> horas / <span id="minutes"></span> min / <span id="seconds"></span> seg
+            </p>
+        </div>
+
+        <!-- Sección 2: Dirección de la Iglesia -->
+        <div class="section">
+                <h2>Ceremonia Religiosa</h2>
+                <p class="flugar">5:00 pm</p>
+                <p class="flugar">Parroquia La Ascensión del Señor, Viviano L. Villarreal 453, Burócratas del Estado, 64380 Monterrey, N.L.</p>
+                <img src="uploads/iglesia.png" alt="Iglesia">
+                <a class="west-button-link" href="https://maps.app.goo.gl/3PGhNWKdRmXU5xft5">
+                    <span>Ver Mapa</span>
+                </a>
+        </div>
+
+        <!-- Sección 3: Dirección del Evento -->
+        <div class="section">
+            <h2>Recepción</h2>
+            <p class="flugar">7:00 pm</p>
+            <p class="flugar">Condesa Real Monterrey (Salon Diamante), Nueva Escocia 4350, Industrial Hab. Abraham Lincoln, 64310 Monterrey, N.L.</p>
+            <img src="uploads/condesa.webp" alt="Condesa Real Monterrey">
+            <a class="west-button-link" href="https://maps.app.goo.gl/tJoqrZwi69YRXJaz9">
+                <span>Ver Mapa</span>
+            </a>
+        </div>
+
+        <!-- Sección 4: Fotografías -->
+        <div class="section">
+            <h2>Momentos Especiales</h2>
+            <p class="frases">
+                "Sus 15 años son un reflejo de su
+                belleza, sus sueños y su alegría. Hoy
+                celebramos con entusiasmo y amor,
+                agradecidos por cada instante
+                compartido y emocionados por todo lo
+                que está por venir"
+            </p>
+            <img src="uploads/les.jpg" alt="les">
+        </div>
+         <!-- Sección 6: Formal -->
+         <div class="section">
+            <h2>Código de Vestimenta</h2>
+            <p class="frases">
+                Casual - Formal <br>
+                Nos reservamos el color lila para la festejada
+            </p>
+            <img src="uploads/iconodresscode.png" style="width: 50px; height: 50px;" alt="dresscode">
+        </div>
+        <!-- Sección : Sobres -->
+        <div class="section">
+            <h2>Lluvia de sobres</h2>
+            <img src="uploads/sobres.png" style="width: 100px; height: 50px;" alt="sobres">
+        </div> 
+        <!-- Sección 8: Asistencia -->
+        <div class="section">
+            <h2>Confirma tu Asistencia</h2>
+            <a href="https://wa.me/528125903222?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20tus%20XV%20años%20el%2026%20de%20Abril%202025" class="whatsapp-btn">
+                <img src="uploads/WhatsApp.svg" alt="WhatsApp Logo">
+                Confirmar
+            </a>
+        </div>  
+
+        <!-- SECCIÓN FLOTANTE PARA CONTROL DE MÚSICA -->
+        <div class="music-control" onclick="toggleAudio()">
+            <img id="music-icon" src="https://cdn-icons-png.flaticon.com/512/727/727269.png" alt="Icono Música">
+            <span id="music-text">Reproducir Música</span>
+        </div>
+
+        
+        
+    </div>
+
+    <!-- AUDIO DE FONDO -->
+    <audio id="bg-music" loop>
+        <source src="uploads/TaylorDavis-ISeetheLight.mp3" type="audio/mp3">
+        Tu navegador no soporta el audio HTML5.
+    </audio>
+
+    <script>
+
+        const myDiv = document.querySelector('#intro');
+        myDiv.addEventListener('click', function() {
+            abrirSobre();
+        });
+
+        function abrirSobre() {
+            const envelope = document.getElementById("envelope");
+            envelope.style.transform = "rotateX(90deg)";
+
+            setTimeout(() => {
+                document.getElementById("intro").classList.add("hidden");
+                document.getElementById("invitacion").classList.remove("hidden");
+                animarSecciones();
+                playAudio();
+            }, 1000);
+        }
+
+        let audio = document.getElementById("bg-music");
+        let audioPlaying = false;
+        let musicIcon = document.getElementById("music-icon");
+        let musicText = document.getElementById("music-text");
+
+        function toggleAudio() {
+            if (audioPlaying) {
+                audio.pause();
+                musicIcon.src = "https://cdn-icons-png.flaticon.com/512/727/727269.png"; // Icono de música apagada
+                musicText.innerText = "Reproducir Música";
+            } else {
+                audio.play();
+                musicIcon.src = "https://cdn-icons-png.flaticon.com/512/149/149852.png"; // Icono de música encendida
+                musicText.innerText = "Pausar Música";
+            }
+            audioPlaying = !audioPlaying;
+        }
+
+        function playAudio() {
+            audio.volume = 0.5;
+            audio.play();
+            audioPlaying = true;
+        }
+
+        function toggleAudio() {
+            if (audioPlaying) {
+                audio.pause();
+            } else {
+                audio.play();
+            }
+            audioPlaying = !audioPlaying;
+        }
+
+        function playMusic() {
+            document.getElementById("bg-music").play();
+        }
+
+        function stopMusic() {
+            document.getElementById("bg-music").pause();
+        }
+
+        function animarSecciones() {
+            document.querySelectorAll('.section').forEach(seccion => {
+                if (seccion.getBoundingClientRect().top < window.innerHeight - 100) {
+                    seccion.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', animarSecciones);
+        animarSecciones();
+
+        function actualizarCuentaRegresiva() {
+            const fechaEvento = new Date("2025-04-26T00:00:00").getTime();
+            const ahora = new Date().getTime();
+            const diferencia = fechaEvento - ahora;
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        //    document.getElementById("countdown").innerHTML = `${dias} días restantes`;
+        }
+
+        setInterval(actualizarCuentaRegresiva, 1000);
+        actualizarCuentaRegresiva();
+        //===
+        // Contador completo
+        //===
+        const DATE_TARGET = new Date('04/26/2025 0:01 AM');
+        const SPAN_DAYS = document.querySelector('span#days');
+        const SPAN_HOURS = document.querySelector('span#hours');
+        const SPAN_MINUTES = document.querySelector('span#minutes');
+        const SPAN_SECONDS = document.querySelector('span#seconds');
+
+        const MILLISECONDS_OF_A_SECOND = 1000;
+        const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+        const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+        const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+
+        function updateCountdown() 
+        {
+            const NOW = new Date()
+            const DURATION = DATE_TARGET - NOW;
+            const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+            const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+            const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+            const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+
+            SPAN_DAYS.textContent = REMAINING_DAYS;
+            SPAN_HOURS.textContent = REMAINING_HOURS;
+            SPAN_MINUTES.textContent = REMAINING_MINUTES;
+            SPAN_SECONDS.textContent = REMAINING_SECONDS;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+        
+        //===
+        // Contador completo
+        //===
+
+    </script>
+
+</body>
+</html>
